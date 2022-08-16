@@ -1,1 +1,18 @@
 
+/*Q1/Write a method that will remove any given character from a String?*/
+#include<iostream>
+#include<algorithm>
+
+using namespace std;
+main() {
+   string my_str;
+   char my_ch;
+   cin>> my_str;
+   cin>>my_ch;
+
+   cout << "Initial string: " << my_str << endl;
+   cout << "Initial character : " <<my_ch << endl;
+
+   my_str.erase(remove(my_str.begin(), my_str.end(), my_ch), my_str.end()); //remove A from string
+   cout << "Final string: " << my_str;
+}
